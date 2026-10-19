@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meodoku</title>
+<meta name="description" content="Meodoku is a cozy cat logic puzzle game for Android. Place one sleeping cat per row, column and color.">
+<link rel="icon" href="icon.png">
+<style>
+@font-face{font-family:"Baloo 2";font-weight:800;src:url(baloo-2-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Nunito";font-weight:600;src:url(nunito-latin-600-normal.woff2) format("woff2")}
+:root{--bg:#FFF8F1;--fg:#2A2240;--muted:#6E6488;--accent:#F07A2E;--line:#EADFD8}
+@media (prefers-color-scheme:dark){:root{--bg:#17141F;--fg:#EFEAF8;--muted:#A79DBE;--accent:#FF9550;--line:#363046}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Nunito",system-ui,sans-serif;font-weight:600;line-height:1.6}
+main{max-width:960px;margin:0 auto;padding:32px max(16px,4vw) 48px;display:flex;flex-direction:column;gap:28px}
+header{display:flex;align-items:center;gap:14px}
+header img{width:56px;height:56px;border-radius:14px}
+header span{font-family:"Baloo 2",system-ui,sans-serif;font-weight:800;font-size:2rem;line-height:1}
+.banner{width:100%;height:auto;border-radius:20px;display:block;box-shadow:0 10px 30px rgba(42,34,64,.15)}
+.intro{display:flex;flex-direction:column;gap:16px;max-width:40rem}
+.intro p{margin:0;font-size:1.15rem}
+.cta{align-self:flex-start;background:var(--accent);color:#fff;text-decoration:none;padding:14px 28px;border-radius:999px;font-size:1.1rem}
+.cta:focus-visible{outline:3px solid var(--fg);outline-offset:3px}
+footer{border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.95rem;display:flex;flex-wrap:wrap;gap:8px 20px}
+footer a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+  <header><img src="icon.png" alt=""><span>Meodoku</span></header>
+  <img class="banner" src="banner.png" alt="Meodoku: place the sleeping cats, one per row, column and color" width="1024" height="500">
+  <section class="intro">
+    <p>Meodoku is a cozy logic puzzle game full of sleepy cats. Place one cat in every colored area, row and column, without letting any two cats touch.</p>
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.mandar.meodoku">Get it on Google Play</a>
+  </section>
+  <footer>
+    <span>© 2026 Meodoku</span>
+    <a href="https://claude.ai/artifact/DR7wsmuuJJu1jcSXWY8JLQ">Privacy policy</a>
+    <span>Contact: foodpackpune@gmail.com</span>
+  </footer>
+</main>
+</body>
+</html>
